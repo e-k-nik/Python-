@@ -1,0 +1,15 @@
+#Фибоначи
+#https://informatics.mccme.ru/mod/statements/view3.php?id=11145&chapterid=112227
+fib1 = 1
+fib2 = 1
+n = int(input())
+
+print(fib1, end=' ')
+print(fib2, end=' ')
+i = 0
+while i < n - 2:
+    fib_sum = fib1 + fib2
+    fib1 = fib2
+    fib2 = fib_sum
+    i = i + 1
+    print(fib2, end=' ')
